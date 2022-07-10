@@ -18,7 +18,8 @@ with open('scanned.txt', 'w') as fp:
         txtList.append(randChoices)
         if len(txtList) == get:
             for list in txtList:
-                print(list)
+                l = ' '.join(list)
+                print(l)
                 # write each item on a new line
-                fp.write("%s\n" % list)
+                fp.write("%s\n" % l)
             break
