@@ -21,15 +21,19 @@ for i in range(100):
     ncounter = i+1
 
     numberList.append(ncounter)
-    levelList.append(level[lcounter])
-    deptList.append(dept[dcounter])
+    lL = levelList.append(level[lcounter])
+    dL = deptList.append(dept[dcounter])
+    for i in range(10):
+        cL = dept[dcounter]+str(int(level[lcounter])+int(i))
+        courses.append(cL)
+    coursesList.append(courses)
+    courses = []
 
     count += 1
     counter += 1
 
     if (count == 4):
         dcounter += 1
-
         count = 0
 
     if counter == 20:
@@ -38,15 +42,15 @@ for i in range(100):
         dcounter = 0
 
 
-print(numberList)
+# print(numberList)
 
 
-# dictionary of lists
-# dict = {'Name': nme, 'degree': deg, 'score': scr}
+# A dictionary of lists
 
 dict = {'Number': numberList, "Level": levelList, "Dept": deptList, 'Courses':coursesList}
 	
 df = pd.DataFrame(dict)
+print(df)
 
 # saving the dataframe
 df.to_csv('data.csv')
