@@ -41,16 +41,12 @@ for i in range(100):
         counter = 0
         dcounter = 0
 
-
-# print(numberList)
-
-
 # A dictionary of lists
 
 dict = {'Number': numberList, "Level": levelList, "Dept": deptList, 'Courses':coursesList}
 	
 df = pd.DataFrame(dict)
-print(df)
+print(df.to_markdown())
 
 # saving the dataframe
 df.to_csv('data.csv')
