@@ -2,15 +2,15 @@
 import pandas as pd
 
 # list of name, degree, score
-# course = ["MTE", "pankaj", "sudhir", "Geeku"]
 dept = ["MTE", "MEE", "CPE", "EEE","CVE"]
 level = [500, 400, 300, 200, 100]
+courses = []
 
 numberList = []
 deptList = []
 levelList = []
 coursesList = []
-courses = []
+
 
 count = 0
 counter = 0
