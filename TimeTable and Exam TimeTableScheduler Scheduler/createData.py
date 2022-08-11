@@ -26,7 +26,7 @@ for i in range(100):
     for i in range(10):
         cL = dept[dcounter]+str(int(level[lcounter])+int(i))
         courses.append(cL)
-    coursesList.append(courses)
+    coursesList.append(list(courses))
     courses = []
 
     count += 1
@@ -43,10 +43,18 @@ for i in range(100):
 
 # A dictionary of lists
 
-dict = {'Number': numberList, "Level": levelList, "Dept": deptList, 'Courses':coursesList}
+dict = {'Number': numberList, "Level": levelList, "Dept": deptList, 'Courses':coursesList,}
+
+# for i in dict["Courses"]:
+#     for v in i:
+#         print(v)
 	
 df = pd.DataFrame(dict)
 print(df.to_markdown())
 
+for i in df["Courses"]:
+    for v in i:
+        print(v)
+
 # saving the dataframe
-df.to_csv('data.csv')
+df["Courses"].to_csv('data.csv')
