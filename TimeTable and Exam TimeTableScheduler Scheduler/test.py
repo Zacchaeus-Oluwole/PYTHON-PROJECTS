@@ -1,5 +1,4 @@
 import pandas as pd
-import ast
 d =  {
         "Morning\n\n08:00am 09:00am 10:00am 11:00am":[
                 [4,2,3,4],
@@ -22,10 +21,12 @@ d =  {
         }
 m = d["Morning\n\n08:00am 09:00am 10:00am 11:00am"]
 print(m[1][2])
+
+df = pd.DataFrame(d)
+# print(d[0:1])
+print(df.to_markdown())
+
 # for i in d["Morning\n\n08:00am 09:00am 10:00am 11:00am"]:
 #     print(i)
 #     for v in i:
 #         print(v)
-# df = pd.DataFrame(d)
-# # print(d[0:1])
-# print(df.to_markdown())
