@@ -34,11 +34,14 @@ d =  {
                 [' ']
             ]
     }
-for i in range(0,10):
+v = int(input("Enter: "))
+b = v//3 + 1
+# print(b)
+for i in range(0,b):
     d['A'].append([' '])
-    print(type(d['A']))
-    d['B'].append("H")
-    d['C'].append("I")
+    # print(type(d['A']))
+    d['B'].append([' '])
+    d['C'].append([' '])
 # m = d["Morning\n\n08:00am 09:00am 10:00am 11:00am"]
 # print(m[1][2])
 
@@ -51,7 +54,7 @@ print(df.to_markdown())
 #     for v in i:
 #         print(v)
 
-while True:
-    v = int(input("Enter: "))
-    b = v//3 + 1
-    print(b)
+# while True:
+#     v = int(input("Enter: "))
+#     b = v//3 + 1
+#     print(b)
