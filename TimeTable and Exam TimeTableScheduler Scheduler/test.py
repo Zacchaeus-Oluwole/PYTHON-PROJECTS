@@ -50,3 +50,8 @@ print(df.to_markdown())
 #     print(i)
 #     for v in i:
 #         print(v)
+
+while True:
+    v = int(input("Enter: "))
+    b = v//3 + 1
+    print(b)
