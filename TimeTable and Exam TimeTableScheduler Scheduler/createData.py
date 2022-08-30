@@ -27,7 +27,7 @@ for i in range(100):
     for i in range(10):
         cL = dept[dcounter]+str(int(level[lcounter])+int(i))
         courses.append(cL)
-    coursesList.append(list(courses))
+    coursesList.append(courses)
     courses = []
 
     count += 1
