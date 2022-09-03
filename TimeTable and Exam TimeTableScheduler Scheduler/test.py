@@ -11,6 +11,7 @@ x = ['B','B','B','D','D','D','A','A','A','C','C','C']
 l = list()
 i = 0
 v = 1
+
 for a in x:
     for b in x:
         i+=1
@@ -19,7 +20,15 @@ for a in x:
             l.append(b)
     if len(l) == len(x):
         break
-
+    
+# for a in x:
+#     for b in x:
+#         i+=1
+#         if b != l[-1]:
+#             v+=1
+#             l.append(b)
+#         if len(l) == len(x):
+#             break
 print(x)
 print(l)
 
