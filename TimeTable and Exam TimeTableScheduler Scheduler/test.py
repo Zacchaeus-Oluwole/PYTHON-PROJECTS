@@ -1,14 +1,3 @@
-# PRINT THE PREVIOUS VALUE --- LAST EVENT REMINDER
-# valueX = 0
-# while True:
-#     value = int(input('Enter'))
-#     if value == valueX:
-#         print("NaN")
-#     else:
-#         print(valueX)
-#     valueX = value
-
-
 # RE-ARRANGE BY SELECTIVE GROUPING OF DIFFERENT VALUES
 
 x = ['B','B','B','B','D','D','D','D','A','A','A','A','C','C','C','C','E','E','E','E']
