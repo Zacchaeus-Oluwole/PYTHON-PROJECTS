@@ -58,6 +58,7 @@ cu = set()
 units = []
 c1 = 0
 c2 = 0
+students = []
 
 for i in df["Courses"]:
     for v in i:
@@ -68,7 +69,9 @@ cuList = sorted(list(cu))
 for i in cuList:
     rand = random.randint(1,3)
     units.append(rand)
-cuDict = {"Courses":cuList, "Units":units}
+    randT = random.randint(30,45)
+    students.append(randT)
+cuDict = {"Courses":cuList, "Units":units, 'Students': students}
 
 # saving the dataframe
 dt = pd.DataFrame(cuDict)
